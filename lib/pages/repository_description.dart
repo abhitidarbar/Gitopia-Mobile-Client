@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:excalibur/pages/browse_code.dart';
+import 'package:excalibur/pages/repository_issue.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_highlight/flutter_highlight.dart';
 
@@ -315,18 +316,15 @@ class _RepositoryDescriptionState extends State<RepositoryDescription> {
                                       color: Colors.grey[400],
                                     ),
                                     onTap: () {
-                                      /*
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) => ProjectIssue(
-                                          token: widget.token,
-                                          projectId: widget.projectId,
-                                          title: "Issues",
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => RepositoryIssue(
+                                            projectId: widget.projectId,
+                                            title: "Issues",
+                                          ),
                                         ),
-                                      ),
-                                    );
-                                    */
+                                      );
                                     },
                                   ),
                                   Divider(
