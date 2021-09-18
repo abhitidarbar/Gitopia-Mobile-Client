@@ -1,3 +1,4 @@
+import 'package:excalibur/pages/your_repositories.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -175,7 +176,17 @@ class _HomePageState extends State<HomePage> {
                         size: 15,
                         color: Colors.grey[400],
                       ),
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (BuildContext context) =>
+                                UserRepositoryList(
+                              title: "Starred Repositories",
+                            ),
+                          ),
+                        );
+                      },
                     ),
                     Divider(
                       color: Colors.grey[300],
@@ -198,7 +209,17 @@ class _HomePageState extends State<HomePage> {
                         size: 15,
                         color: Colors.grey[400],
                       ),
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (BuildContext context) =>
+                                UserRepositoryList(
+                              title: "Repositories",
+                            ),
+                          ),
+                        );
+                      },
                     ),
                     Divider(
                       color: Colors.grey[300],
