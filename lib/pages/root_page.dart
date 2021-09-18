@@ -1,8 +1,6 @@
 import 'package:excalibur/pages/create_new_wallet.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:excalibur/services/storage.dart' as storage;
 
 class RootPage extends StatefulWidget {
   const RootPage({Key? key, this.title}) : super(key: key);
@@ -51,7 +49,7 @@ class _RootPageState extends State<RootPage> {
               ),
               GestureDetector(
                 onTap: () {
-                  Navigator.pushReplacement(
+                  Navigator.push(
                     context,
                     MaterialPageRoute(
                       builder: (BuildContext context) =>
