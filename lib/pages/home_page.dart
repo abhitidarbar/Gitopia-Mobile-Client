@@ -246,6 +246,9 @@ class _HomePageState extends State<HomePage> {
                       ),
                       onTap: () {},
                     ),
+                    const SizedBox(
+                      height: 10.0,
+                    ),
                   ],
                 ),
               ),
