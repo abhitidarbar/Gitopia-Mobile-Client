@@ -1,3 +1,4 @@
+import 'package:excalibur/pages/issue_description.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:async';
@@ -274,12 +275,10 @@ class _RepositoryIssueState extends State<RepositoryIssue> {
                     ),
                   ),
                   onTap: () {
-                    /*
                     Navigator.push(
                       context,
                       MaterialPageRoute(
                         builder: (context) => IssueDescription(
-                          token: widget.token,
                           issueId: _RepositoryIssueList[index].iid,
                           title: _RepositoryIssueList[index].issueTitle,
                           issueDescription:
@@ -290,7 +289,6 @@ class _RepositoryIssueState extends State<RepositoryIssue> {
                         ),
                       ),
                     );
-                    */
                   },
                 ),
                 const SizedBox(
