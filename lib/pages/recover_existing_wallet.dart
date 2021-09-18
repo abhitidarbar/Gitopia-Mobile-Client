@@ -1,3 +1,4 @@
+import 'package:excalibur/pages/home_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -85,7 +86,14 @@ class _RecoverExistingWalletState extends State<RecoverExistingWallet> {
               ),
               ElevatedButton(
                 child: const Text('Recover'),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => const HomePage(),
+                    ),
+                  );
+                },
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(
                     Colors.deepPurple,

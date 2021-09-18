@@ -57,6 +57,7 @@ flutter:
     - assets/logo-g.png
     - assets/new-wallet.png
     - assets/existing-wallet.png
+    - assets/user-avatar.png
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
