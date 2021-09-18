@@ -228,6 +228,29 @@ class _HomePageState extends State<HomePage> {
                     ),
                     ListTile(
                       leading: const Icon(
+                        Icons.account_balance,
+                        color: Colors.grey,
+                      ),
+                      title: const Text(
+                        "Organizations",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                      trailing: Icon(
+                        Icons.arrow_forward_ios,
+                        size: 15,
+                        color: Colors.grey[400],
+                      ),
+                      onTap: () {},
+                    ),
+                    Divider(
+                      color: Colors.grey[300],
+                      endIndent: 0.0,
+                      indent: 70.0,
+                    ),
+                    ListTile(
+                      leading: const Icon(
                         Icons.info_outline,
                         color: Colors.grey,
                       ),
