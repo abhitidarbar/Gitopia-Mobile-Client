@@ -1,3 +1,4 @@
+import 'package:excalibur/pages/repository_description.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:cached_network_image/cached_network_image.dart';
@@ -252,25 +253,22 @@ class _UserRepositoryListState extends State<UserRepositoryList> {
                                       color: Colors.grey[400],
                                     ),
                                     onTap: () {
-                                      /*
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) =>
-                                            ProjectDescription(
-                                          token: widget.token,
-                                          projectId:
-                                              snapshot.data[index].projectId,
-                                          projectName:
-                                              snapshot.data[index].projectName,
-                                          projectAvatar: snapshot
-                                              .data[index].projectAvatarUrl,
-                                          readmeUrl:
-                                              snapshot.data[index].readmeUrl,
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                              RepositoryDescription(
+                                            projectId:
+                                                snapshot.data![index].projectId,
+                                            projectName: snapshot
+                                                .data![index].projectName,
+                                            projectAvatar: snapshot
+                                                .data![index].projectAvatarUrl,
+                                            readmeUrl:
+                                                snapshot.data![index].readmeUrl,
+                                          ),
                                         ),
-                                      ),
-                                    );
-                                    */
+                                      );
                                     },
                                   ),
                                   Divider(
