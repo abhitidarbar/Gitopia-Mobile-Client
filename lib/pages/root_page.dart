@@ -1,4 +1,5 @@
 import 'package:excalibur/pages/create_new_wallet.dart';
+import 'package:excalibur/pages/recover_existing_wallet.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -100,7 +101,15 @@ class _RootPageState extends State<RootPage> {
                 ),
               ),
               GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) =>
+                          const RecoverExistingWallet(),
+                    ),
+                  );
+                },
                 child: Container(
                   margin: const EdgeInsets.only(left: 20.0, right: 20.0),
                   child: Card(
