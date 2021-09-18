@@ -1,3 +1,4 @@
+import 'package:excalibur/pages/download_backup.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -126,7 +127,14 @@ class _CreateNewWalletState extends State<CreateNewWallet> {
               ),
               ElevatedButton(
                 child: const Text('Create'),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => const DownloadBackup(),
+                    ),
+                  );
+                },
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(
                     Colors.deepPurple,
