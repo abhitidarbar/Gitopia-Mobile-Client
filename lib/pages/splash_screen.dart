@@ -1,7 +1,7 @@
 import 'package:excalibur/pages/root_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+//import 'package:shared_preferences/shared_preferences.dart';
 import 'package:excalibur/services/storage.dart' as storage;
 import 'dart:async';
 
@@ -17,16 +17,18 @@ class SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    _loadSavedToken();
+    //_loadSavedToken();
     startTimer();
   }
 
+/*
   _loadSavedToken() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     setState(() {
       storage.address = prefs.getString('address');
     });
   }
+  */
 
   @override
   Widget build(BuildContext context) {
